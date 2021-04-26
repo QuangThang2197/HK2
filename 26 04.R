@@ -44,5 +44,6 @@ sapply(conversion,length)
 sapply(conversion,sum)
 sapply(conversion,mean)
 sapply(conversion,cumsum)
+sapply(conversion,factor)
 
 
