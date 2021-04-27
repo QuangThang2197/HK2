@@ -1,8 +1,12 @@
-setwd('C:\\Users\\DELL\\PythonProject')
-
 # Cay Heap 
 # Upheap: chen 1 phan tu vao cuoi cay
 # So sanh child and parent va tien hanh dao vi tri neu vi pham heap
+
+# Downheap
+# Doi phan tu dau va cuoi
+# tien hanh downheap
+# so sanh phan tu dau (parent)
+# trao doi parent va child
 
 
 heap.building<-function(vec)
@@ -82,11 +86,6 @@ heap=heap.building(vec)
 heap
 heap.sort(heap)
 
-# Downheap
-# Doi phan tu dau va cuoi
-# tien hanh downheap
-# so sanh phan tu dau (parent)
-# trao doi parent va child
 
 
 
