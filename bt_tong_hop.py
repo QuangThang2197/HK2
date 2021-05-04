@@ -46,14 +46,6 @@ def tinhgiaithua(n):
 n = int(input("Nhập số nguyên dương n = "))
 print("Giai thừa của", n, "là", tinhgiaithua(n))
 
-# BT09. Cài đặt hàng đợi - queue
-from collections import deque
-d = deque([1,2,3,4])
-
-for x in d:
-    print(x)
-d.remove(3)
-print(d)
 
 # BT12. Cài đặt đồ thị vô hướng
 
