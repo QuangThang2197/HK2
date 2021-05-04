@@ -52,7 +52,7 @@ d = deque([1,2,3,4])
 
 for x in d:
     print(x)
-print(d.popleft())
+d.remove(3)
 print(d)
 
 # BT12. Cài đặt đồ thị vô hướng
