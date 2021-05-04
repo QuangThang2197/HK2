@@ -56,7 +56,8 @@ d.remove(3)
 print(d)
 
 # BT12. Cài đặt đồ thị vô hướng
-df = pd.DataFrame({'from': ['D', 'A', 'B', 'C', 'A'], 'to': ['A', 'D', 'A', 'E', 'C']})
+
+df = pd.DataFrame({'from': ['A', 'B', 'C', 'D'], 'to': ['B', 'C', 'A', 'B']})
 
 G = nx.from_pandas_edgelist(df, 'from', 'to', create_using=nx.DiGraph())
 
@@ -65,7 +66,8 @@ plt.title("Directed")
 plt.show()
 
 # BT13. Cài đặt đồ thị có hướng
-df = pd.DataFrame({'from': ['D', 'A', 'B', 'C', 'A'], 'to': ['A', 'D', 'A', 'E', 'C']})
+
+df = pd.DataFrame({'from': ['A', 'B', 'C', 'D'], 'to': ['B', 'C', 'A', 'B']})
 
 G = nx.from_pandas_edgelist(df, 'from', 'to', create_using=nx.Graph())
 
