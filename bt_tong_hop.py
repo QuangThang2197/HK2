@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 
 # BT01. Tháp Hà Nội
+
 def TowerOfHanoi(n, from_rod, to_rod, aux_rod):
     if n == 1:
         print("Move disk 1 from rod", from_rod, "to rod", to_rod)
