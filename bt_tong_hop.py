@@ -67,6 +67,39 @@ nx.draw(G, with_labels=True, node_size=1500, alpha=0.3, arrows=True)
 plt.title("UN-Directed")
 plt.show()
 
+# BT14.  Cài đặt thuật toán sắp xếp chọn
+
+def insertion_sort(InputList):
+    for i in range(1, len(InputList)):
+        j = i-1
+        nxt_element = InputList[i]
+
+		
+        while (InputList[j] > nxt_element) and (j >= 0):
+            InputList[j+1] = InputList[j]
+            j=j-1
+        InputList[j+1] = nxt_element
+
+list = [19,2,31,45,30,11,121,27]
+insertion_sort(list)
+print(list)
+
+# BT15.  Cài đặt thuật toán sắp xếp chèn
+def selection_sort(input_list):
+
+    for idx in range(len(input_list)):
+
+        min_idx = idx
+        for j in range( idx +1, len(input_list)):
+            if input_list[min_idx] > input_list[j]:
+                min_idx = j
+        input_list[idx], input_list[min_idx] = input_list[min_idx], input_list[idx]
+
+
+l = [19,2,31,45,30,11,121,27]
+selection_sort(l)
+print(l)
+
 # BT16.  Cài đặt thuật toán sắp xếp nổi bọt
 
 def bubblesort(list):
