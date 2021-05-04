@@ -69,22 +69,6 @@ plt.show()
 
 # BT14.  Cài đặt thuật toán sắp xếp chọn
 
-def insertion_sort(InputList):
-    for i in range(1, len(InputList)):
-        j = i-1
-        nxt_element = InputList[i]
-
-		
-        while (InputList[j] > nxt_element) and (j >= 0):
-            InputList[j+1] = InputList[j]
-            j=j-1
-        InputList[j+1] = nxt_element
-
-list = [19,2,31,45,30,11,121,27]
-insertion_sort(list)
-print(list)
-
-# BT15.  Cài đặt thuật toán sắp xếp chèn
 def selection_sort(input_list):
 
     for idx in range(len(input_list)):
@@ -99,6 +83,23 @@ def selection_sort(input_list):
 l = [19,2,31,45,30,11,121,27]
 selection_sort(l)
 print(l)
+
+# BT15.  Cài đặt thuật toán sắp xếp chèn
+
+def insertion_sort(InputList):
+    for i in range(1, len(InputList)):
+        j = i-1
+        nxt_element = InputList[i]
+
+		
+        while (InputList[j] > nxt_element) and (j >= 0):
+            InputList[j+1] = InputList[j]
+            j=j-1
+        InputList[j+1] = nxt_element
+
+list = [19,2,31,45,30,11,121,27]
+insertion_sort(list)
+print(list)
 
 # BT16.  Cài đặt thuật toán sắp xếp nổi bọt
 
