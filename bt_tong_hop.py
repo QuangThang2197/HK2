@@ -57,7 +57,7 @@ print(d)
 
 # BT12. Cài đặt đồ thị vô hướng
 
-df = pd.DataFrame({'from': ['A', 'B', 'C', 'D'], 'to': ['B', 'C', 'A', 'B']})
+df = pd.DataFrame({'from': ['A', 'B', 'C', 'D'], 'to': ['B', 'D', 'A', 'A']})
 
 G = nx.from_pandas_edgelist(df, 'from', 'to', create_using=nx.DiGraph())
 
@@ -67,7 +67,7 @@ plt.show()
 
 # BT13. Cài đặt đồ thị có hướng
 
-df = pd.DataFrame({'from': ['A', 'B', 'C', 'D'], 'to': ['B', 'C', 'A', 'B']})
+df = pd.DataFrame({'from': ['A', 'B', 'C', 'D'], 'to': ['B', 'D', 'A', 'A']})
 
 G = nx.from_pandas_edgelist(df, 'from', 'to', create_using=nx.Graph())
 
@@ -79,11 +79,11 @@ plt.show()
 
 def bubblesort(list):
     for iter_num in range(len(list)-1,0,-1):
-        for idx in range(iter_num):
-            if list[idx]>list[idx+1]:
-                temp = list[idx]
-                list[idx] = list[idx+1]
-                list[idx+1] = temp
+        for i in range(iter_num):
+            if list[i]>list[i+1]:
+                temp = list[i]
+                list[i] = list[i+1]
+                list[i+1] = temp
 
 
 list = [19,2,31,45,6,11,121,27]
