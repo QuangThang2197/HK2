@@ -183,5 +183,5 @@ def merge(left_half,right_half):
     return res
 
 unsorted_list = [64, 34, 25, 12, 22, 11, 90]
-
+print(unsorted_list)
 print(merge_sort(unsorted_list))
