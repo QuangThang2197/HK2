@@ -8,7 +8,7 @@ sibl <- Owls$SiblingNegotiation
 sibl[Owls$SiblingNegotiation<=17] <- 4 # set pch 
 sibl[Owls$SiblingNegotiation>17] <- 3
 
-for (i in 1:N){         # check each row of AllNest
+for (i in 1:N){         # check lines of AllNest
   Nest.i <- AllNest[i]  # Nest from 1 to N
   A.i <- Owls[Owls$Nest == Nest.i, ]  # check Nest column
   YourFileName <- paste(Nest.i, '.jpg', sep = '') # name the file
