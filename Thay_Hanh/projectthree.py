@@ -23,6 +23,7 @@ class ProjectThree():
         self.data_chuan_hoa = (self.data - self.mu / self.sigma)
     def dist(self):
         sns.distplot(self.data, color='red')
+        plt.show()
 
     def qq_plot(self):
         x = np.random.normal(self.mu, self.sigma, 1000)
