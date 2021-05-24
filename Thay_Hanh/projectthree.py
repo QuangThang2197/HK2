@@ -1,5 +1,5 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
 from matplotlib import pyplot as plt
 from scipy import stats
 import seaborn as sns
@@ -30,3 +30,5 @@ class ProjectThree():
         plt.show()
 
 pj = ProjectThree(screen)
+pj.dist()
+pj.qq_plot()
