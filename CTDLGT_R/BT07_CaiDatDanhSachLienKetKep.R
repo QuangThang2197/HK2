@@ -1,5 +1,3 @@
-
-
 lst <- list(1, 2, 3, 4, 5)    # a list of 5 items
 lst <- vector("list", 10000)  # 10000 NULLs
 lst[[1]] <- 1
