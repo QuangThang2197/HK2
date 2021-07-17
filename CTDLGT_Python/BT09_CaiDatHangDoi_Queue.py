@@ -1,5 +1,4 @@
 class Queue:
-
 	def __init__(self):
 		self.items = []
 
@@ -17,17 +16,14 @@ class Queue:
 
 	def push(self, item):
 		self.items.append(item)
-
-
+		
 q = Queue()
 print ("Is empty: " + str(q.isEmpty()))
 q.push(1)
 q.push(2)
 q.push(3)
 print ("List: " + str(q.items))
-
 print ("Pop item at position 0: " + str(q.pop()))
 print ("List: " + str(q.items))
-
 print ("Peek of queue: " + str(q.peek()))
 print ("Size: " + str(q.size()))
