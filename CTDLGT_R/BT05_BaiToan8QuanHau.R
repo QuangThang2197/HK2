@@ -1,9 +1,5 @@
-
-
 library(tidyverse)
-
 place_queen <- function(queens=c()) {
-   
    #---------------------------------------------------------------------------
    # If there are 8 queens placed, then this must be a solution.
    #---------------------------------------------------------------------------
