@@ -23,5 +23,4 @@ mergesort<-function(A) {
   }
 }
 x<- c(-1,2,1,10,3,9,234,123,543,324)
-
 mergesort(x)
