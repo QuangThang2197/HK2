@@ -1,8 +1,4 @@
-
-
-# sap xep chon
 vec <- sample(1:100)
-vec
 sort <- function(x) {
   n<- length(x)
   for (i in 1:(n-1)) {
