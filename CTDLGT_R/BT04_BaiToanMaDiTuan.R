@@ -1,15 +1,5 @@
-
-
-knight_offsets <- matrix(c(
-  1,    2,
-  2,    1,
-  -2,    1,
-  -1,    2,
-  2,   -1,
-  1,   -2,
-  -1,   -2,
-  -2,   -1
-), ncol = 2, byrow = TRUE)  # Knight offsets i.e. the possible movements of a knight from the current location
+knight_offsets <- matrix(c(1, 2, 2, 1, -2, 1, -1, 2, 2, -1, 1, -2, -1, -2, -2, -1), 
+                         ncol = 2, byrow = TRUE)  # Knight offsets i.e. the possible movements of a knight from the current location
 
 move_knight <- function(this_move, moves, visited) {
   # Mark the move as visited
