@@ -1,5 +1,3 @@
-
-
 giaithua <- function(n){
   giai_thua = 1
   if (n < 0){
