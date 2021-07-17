@@ -9,8 +9,6 @@ heap.building<-function(vec)
   return(heap)
 }
 
-
-
 is.heap<-function(heap,root_i)
 {
   i=root_i
@@ -25,12 +23,10 @@ is.heap<-function(heap,root_i)
   return(res)
 }
 
-
 modify.heap<-function(heap,root_i)
 {
   len=length(heap)
   flag=1
-  
   while (root_i*2<=len&&flag==1)
   {
     left_i=root_i*2
@@ -43,11 +39,9 @@ modify.heap<-function(heap,root_i)
     {
       flag=1
       heap_ind=c(left_i,right_i)[min_ind]
-      
       tmp=heap[heap_ind]
       heap[heap_ind]=heap[root_i]
       heap[root_i]=tmp
-      
       root_i=heap_ind
     }
   }
@@ -69,8 +63,6 @@ heap.sort<-function(heap)
   }
   return(sorted)
 }
-
-
 vec = c(-1,2,1,10,3,9)
 heap=heap.building(vec)
 heap_sort=heap.sort(heap)
