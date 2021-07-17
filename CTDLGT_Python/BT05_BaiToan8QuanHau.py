@@ -1,14 +1,15 @@
 import numpy as np
 import copy
+import seaborn as sns
+import matplotlib.pyplot as plt
+import string
 
 N = 10
 grid = np.zeros([N, N], dtype=int)
 grid = grid.tolist()
 
-
 def possible(grid, y, x):
     l = len(grid)
-
     for i in range(l):
         if grid[y][i] == 1:
             return False
@@ -22,7 +23,6 @@ def possible(grid, y, x):
                 if abs(i - y) == abs(j - x):
                     return False
     return True
-
 
 def solve(grid):
     l = len(grid)
@@ -39,22 +39,16 @@ def solve(grid):
 
     return grid
 
-
 Solution = solve(copy.deepcopy(grid))
 print(np.matrix(Solution))
 
-
 def plot(grid):
-    import seaborn as sns
-    import matplotlib.pyplot as plt
-    import string
-
     l = len(grid)
     Ly = list(range(1, l + 1))[::-1]
     ly = [str(i) for i in Ly]
     Lx = list(string.ascii_uppercase)
     lx = Lx[:l]
-
+    
     plt.close('all')
     sns.set(font_scale=2)
     plt.figure(figsize=(10, 10))
@@ -63,5 +57,4 @@ def plot(grid):
     sns.heatmap(Solution, linewidths=.8, cbar=False, linecolor='blue',
                 cmap='Reds', center=0.4, xticklabels=lx, yticklabels=ly)
 
-
-plot(grid)
+ plot(grid)
