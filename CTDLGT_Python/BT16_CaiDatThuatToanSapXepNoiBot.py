@@ -5,8 +5,7 @@ def bubblesort(list):
                 temp = list[i]
                 list[i] = list[i+1]
                 list[i+1] = temp
-
-
+                
 list = [19,2,31,45,6,11,121,27]
 bubblesort(list)
 print(list)
