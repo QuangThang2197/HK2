@@ -1,5 +1,4 @@
 class Stack:
-
     def __init__(self):
         self.stack = []
 
@@ -11,7 +10,6 @@ class Stack:
         else:
             return False
 # Sử dụng chế độ xem trước để nhìn vào đầu ngăn xếp
-
     def peek(self):
 	    return self.stack[-1]
 
@@ -20,9 +18,7 @@ AStack.add("Mon")
 AStack.add("Tue")
 AStack.peek()
 print(AStack.peek())
-
 print('-'*10)
-
 AStack.add("Wed")
 AStack.add("Thu")
 print(AStack.peek())
