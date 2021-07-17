@@ -1,4 +1,3 @@
-# sap xep chen
 insertionsort_function <- function(A){
   for (j in 2:length(A)) {
     key = A[j] 
