@@ -1,5 +1,3 @@
-#sap xep noi bot
-
 vec = c(1,-1,3,2,10,9)
 bubble <- function(x){
   n<-length(x)
