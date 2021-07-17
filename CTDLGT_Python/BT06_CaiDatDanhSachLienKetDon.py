@@ -2,12 +2,11 @@ class Node(object):
     def __init__(self):
         self.data = None # contains the data
         self.next = None # contains the reference to the next node
-
-
+        
 class LinkedList:
     def __init__(self):
         self.cur_node = None
-
+        
     def add_node(self, data):
         new_node = Node() # create a new node
         new_node.data = data
@@ -19,12 +18,9 @@ class LinkedList:
         while node:
             print (node.data)
             node = node.next
-
-
-
+            
 ll = LinkedList()
 ll.add_node(343)
 ll.add_node(546)
 ll.add_node(324)
-
 ll.list_print()
