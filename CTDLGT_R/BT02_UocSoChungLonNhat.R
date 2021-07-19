@@ -11,4 +11,4 @@ uscln <- function(a, b){
   }
 }
 
-uscln(3, -2)
+uscln(24, 6)
