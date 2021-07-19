@@ -11,4 +11,4 @@ giaithua <- function(n){
   }
 }
 
-giaithua(3)
+giaithua(4)
