@@ -12,12 +12,5 @@ sort <- function(x) {
   }
   return(x)
 }
-sort(vec)
 
-selfsort <- function(x) {
-  if (length(x)>1) {
-    min <- which.min(x)
-    c(x[min], selfsort(x[-min]))
-  } else x
-}
-selfsort(vec)
+sort(vec)
