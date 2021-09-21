@@ -1,5 +1,3 @@
-setwd('C:\\Users\\RED\\PycharmProjects\\CTDLGT_R')
-
 library(nycflights13)
 library(ggplot2)
 library(dplyr)
