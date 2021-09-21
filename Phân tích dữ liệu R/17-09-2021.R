@@ -18,7 +18,7 @@ ewr <- weather %>% filter(origin==c("EWR"))
 time <- ewr$time_hour
 
 ggplot(aes(x = time_hour, y = temp), 
-       data = subset(ewr, time < '2013/01/16 12:00:00' )) + 
+       data = subset(ewr, time < '2013/01/15 00:00:00' )) + 
   geom_line(size=0.5)
 
 #Ex3:
